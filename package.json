@@ -9,9 +9,9 @@
     "lint:fix": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "docker:Up": "docker-compose -f infra/compose.yaml up -d --force-recreate",
-    "docker:Stop": "docker-compose -f infra/compose.yaml stop",
-    "docker:Down": "docker-compose -f infra/compose.yaml down",
+    "docker:Up": "docker compose -f infra/compose.yaml up -d --force-recreate",
+    "docker:Stop": "docker compose -f infra/compose.yaml stop",
+    "docker:Down": "docker compose -f infra/compose.yaml down",
     "migration:create": "node-pg-migrate -m infra/migrations create",
     "migration:up": "node-pg-migrate -m infra/migrations --envPath .env.development up"
   },
